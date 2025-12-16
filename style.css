@@ -48,7 +48,7 @@ body {
     text-decoration: none;
     padding: 10px 16px;
     border-radius: 10px;
-    font-size: 1.75rem;
+    font-size: 1.95rem;
     font-weight: 600;
     transition: 0.2s;
 }
@@ -153,11 +153,12 @@ body {
     margin: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.8rem !important;
 }
 
 .cuenta-box p {
     margin-bottom: 10px;
+    font-size: 2.2rem !important;
 }
 
 .tabla-resumen {
@@ -176,12 +177,12 @@ body {
 }
 
 .titulo-col {
-    font-size: 1.2rem;
+    font-size: 2.2rem !important;
     color: #6C757D;
 }
 
 .valor-col {
-    font-size: 1.5rem;
+    font-size: 1.8rem !important;
     font-weight: bold;
     color: #0A2463;
     margin-top: 5px;
