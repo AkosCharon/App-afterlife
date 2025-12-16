@@ -75,16 +75,21 @@ body {
 /* ============================
    CONTENIDO GENERAL
 ============================ */
-.contenido,
-.contenido2 {
+.contenido {
     margin-top: 95px;
     padding: 20px;
     text-align: center;
 }
 
+.contenido2 {
+    margin-top: 95px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
 .contenido h1,
 .contenido2 h1 {
-    font-size: 2.9rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     color: #0A2463;
 }
@@ -149,24 +154,24 @@ body {
 .cuenta-box {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     text-align: left;
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
 }
 
 .cuenta-box p {
     margin-bottom: 10px;
-    font-size: 2.2rem !important;
+    font-size: 1.4rem !important;
 }
 
 .tabla-resumen {
     display: flex;
     justify-content: space-around;
     background: #FFFFFF;
-    margin: 20px;
-    padding: 20px 10px;
+    margin: 10px;
+    padding: 15px 10px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -177,12 +182,12 @@ body {
 }
 
 .titulo-col {
-    font-size: 2.2rem !important;
+    font-size: 1.4rem !important;
     color: #6C757D;
 }
 
 .valor-col {
-    font-size: 1.8rem !important;
+    font-size: 1.3rem !important;
     font-weight: bold;
     color: #0A2463;
     margin-top: 5px;
