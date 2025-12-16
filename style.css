@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 115px;
+    height: 95px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -35,8 +35,8 @@ body {
 }
 
 .nav-left a .logo {
-    height: 120px;
-    margin-top: 25px;
+    height: 75px;
+    margin-top: 20px;
 }
 
 .nav-right {
@@ -46,9 +46,9 @@ body {
 
 .nav-right a {
     text-decoration: none;
-    padding: 10px 16px;
+    padding: 10px 8px;
     border-radius: 10px;
-    font-size: 1.95rem;
+    font-size: 1.10rem;
     font-weight: 600;
     transition: 0.2s;
 }
@@ -107,7 +107,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 155px;
+    height: 105px;
     background-color: #FFFFFF;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -120,7 +120,7 @@ body {
 .bottom-btn {
     text-decoration: none;
     color: #2C3E50;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,8 +133,8 @@ body {
 }
 
 .bottom-icon {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     opacity: 0.85;
     margin-bottom: 3px;
 }
@@ -199,11 +199,11 @@ body {
     width: 100vw;
 
     /* Alturas reales de tu header y footer */
-    margin-top: 115px;      /* altura del top-nav */
-    margin-bottom: 155px;   /* altura del bottom-nav */
+    margin-top: 95px;      /* altura del top-nav */
+    margin-bottom: 105px;   /* altura del bottom-nav */
 
     /* Altura exacta del espacio disponible */
-    height: calc(100vh - 115px - 155px);
+    height: calc(100vh - 95px - 105px);
 
     overflow: hidden;
 }
@@ -308,10 +308,10 @@ body {
 
 .camara-main {
     position: relative;
-    margin-top: 115px;      /* misma altura que tu .top-nav */
-    margin-bottom: 155px;   /* misma altura que tu .bottom-nav */
+    margin-top: 95px;      /* misma altura que tu .top-nav */
+    margin-bottom: 105px;   /* misma altura que tu .bottom-nav */
     width: 100vw;
-    height: calc(100vh - 115px - 155px); /* pantalla - header - footer */
+    height: calc(100vh - 95px - 105px); /* pantalla - header - footer */
     overflow: hidden;
 }
 
@@ -329,7 +329,7 @@ body.camara-page {
 }
 
 body.camara-page .camara-main {
-    margin-top: 115px;
-    margin-bottom: 155px;
-    height: calc(100vh - 115px - 155px);
+    margin-top: 95px;
+    margin-bottom: 105px;
+    height: calc(100vh - 95px - 105px);
 }
