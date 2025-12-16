@@ -191,18 +191,29 @@ body {
 /* ============================
    PÁGINA CÁMARA
 ============================ */
+/* ============================
+   PÁGINA CÁMARA (VERSIÓN FINAL)
+============================ */
 .camara-main {
-    margin-top: 30px;
-    margin-bottom: 75px;
+    position: relative;
     width: 100vw;
-    height: calc(100vh - 190px);
+
+    /* Alturas reales de tu header y footer */
+    margin-top: 115px;      /* altura del top-nav */
+    margin-bottom: 155px;   /* altura del bottom-nav */
+
+    /* Altura exacta del espacio disponible */
+    height: calc(100vh - 115px - 155px);
+
     overflow: hidden;
 }
 
 .camara-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;      /* llena el espacio recortando lo que haga falta */
+    object-position: center; /* centra la imagen */
+    display: block;
 }
 
 /* ============================
@@ -293,4 +304,32 @@ body {
 
 .cta-btn:hover {
     opacity: 0.85;
+}
+
+.camara-main {
+    position: relative;
+    margin-top: 115px;      /* misma altura que tu .top-nav */
+    margin-bottom: 155px;   /* misma altura que tu .bottom-nav */
+    width: 100vw;
+    height: calc(100vh - 115px - 155px); /* pantalla - header - footer */
+    overflow: hidden;
+}
+
+.camara-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* rellena el espacio, recortando si hace falta */
+    display: block;
+}
+
+
+body.camara-page {
+    padding-bottom: 0 !important;
+    overflow: hidden !important;
+}
+
+body.camara-page .camara-main {
+    margin-top: 115px;
+    margin-bottom: 155px;
+    height: calc(100vh - 115px - 155px);
 }
