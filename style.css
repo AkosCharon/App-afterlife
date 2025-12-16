@@ -1,4 +1,6 @@
-
+/* ============================
+   RESET
+============================ */
 * {
     margin: 0;
     padding: 0;
@@ -10,50 +12,51 @@ body {
     background-color: #F8F9FA;
     color: #2C3E50;
     overflow-x: hidden;
-    padding-bottom: 70px; 
+    padding-bottom: 85px; /* espacio para nav inferior */
+    font-size: 18px;
 }
 
-
+/* ============================
+   NAV SUPERIOR
+============================ */
 .top-nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 85px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 18px;
     z-index: 100;
 }
 
 .nav-left a .logo {
-    height: 79px;
-    margin-top: 16px;
+    height: 95px;
+    margin-top: 10px;
 }
 
 .nav-right {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .nav-right a {
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 1.1rem;
     font-weight: 600;
     transition: 0.2s;
 }
-
 
 .btn-login {
     color: #0A2463;
     border: 2px solid #0A2463;
 }
-
 
 .btn-register {
     background-color: #0A2463;
@@ -69,48 +72,42 @@ body {
     opacity: 0.8;
 }
 
-
-.contenido {
-    margin-top: 80px;
+/* ============================
+   CONTENIDO GENERAL
+============================ */
+.contenido,
+.contenido2 {
+    margin-top: 95px;
     padding: 20px;
     text-align: center;
 }
 
-.contenido h1 {
-    font-size: 1.8rem;
+.contenido h1,
+.contenido2 h1 {
+    font-size: 2.2rem;
     margin-bottom: 10px;
     color: #0A2463;
 }
 
-.contenido p {
-    font-size: 1.2rem;
+.contenido p,
+.contenido2 p {
+    font-size: 1.4rem;
     color: #6C757D;
 }
 
-                        .contenido2 {
-                            margin-top: 70px;
-                            padding: 20px 0;
-                            text-align: center;
-                        }
+.mapa-puntos {
+    width: 100vw;
+}
 
-                        .contenido2 h1 {
-                            font-size: 1.6rem;
-                            margin-bottom: 10px;
-                            color: #0A2463;
-                        }
-
-                        .contenido2 p {
-                            font-size: 1.2rem;
-                            color: #6C757D;
-                        }
-
-
+/* ============================
+   NAV INFERIOR
+============================ */
 .bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 65px;
+    height: 85px;
     background-color: #FFFFFF;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -122,48 +119,52 @@ body {
 .bottom-btn {
     text-decoration: none;
     color: #2C3E50;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.2s;
 }
 
-.bottom-btn span {
-    font-size: 1.6rem;
-}
-
 .bottom-btn:hover {
     color: #0A2463;
     transform: scale(1.1);
 }
-.mapa-puntos {
-    width: 100vw;
+
+.bottom-icon {
+    width: 36px;
+    height: 36px;
+    opacity: 0.85;
+    margin-bottom: 3px;
 }
 
+.bottom-btn:hover .bottom-icon {
+    opacity: 1;
+}
 
-/* Caja de datos del usuario */
+/* ============================
+   PÁGINA CUENTA
+============================ */
 .cuenta-box {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 15px;
-    margin: 15px;
+    padding: 20px;
+    margin: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .cuenta-box p {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Tabla/resumen */
 .tabla-resumen {
     display: flex;
     justify-content: space-around;
     background: #FFFFFF;
-    margin: 15px;
-    padding: 15px 5px;
+    margin: 20px;
+    padding: 20px 10px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -174,107 +175,117 @@ body {
 }
 
 .titulo-col {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #6C757D;
 }
 
 .valor-col {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #0A2463;
     margin-top: 5px;
 }
 
+/* ============================
+   PÁGINA CÁMARA
+============================ */
 .camara-main {
-    margin-top: 70px; /* espacio del header */
-    margin-bottom: 70px; /* espacio del footer */
+    margin-top: 95px;
+    margin-bottom: 95px;
     width: 100vw;
-    height: calc(100vh - 140px); /* pantalla menos header y footer */
+    height: calc(100vh - 190px);
     overflow: hidden;
 }
 
 .camara-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* llena el espacio como una cámara real */
+    object-fit: cover;
 }
 
-/* HERO */
+/* ============================
+   HERO INDEX
+============================ */
 .hero {
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #0A2463;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #6C757D;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .hero-img {
-    width: 90%;
+    width: 95%;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* CARDS */
+/* ============================
+   CARDS INDEX
+============================ */
 .info-cards {
     margin-top: 20px;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .card {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     text-align: left;
 }
 
 .card h2 {
-    font-size: 1.3rem;
-    color: #0A2463;
-    margin-bottom: 5px;
-}
-
-.card p {
-    font-size: 1.1rem;
-    color: #6C757D;
-}
-
-/* CTA FINAL */
-.cta {
-    text-align: center;
-    padding: 20px 15px;
-}
-
-.cta h2 {
     font-size: 1.6rem;
     color: #0A2463;
     margin-bottom: 8px;
 }
 
-.cta p {
-    font-size: 1.1rem;
+.card p {
+    font-size: 1.3rem;
     color: #6C757D;
-    margin-bottom: 15px;
+}
+
+/* ============================
+   CTA FINAL
+============================ */
+.cta {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    color: #0A2463;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    color: #6C757D;
+    margin-bottom: 20px;
 }
 
 .cta-btn {
     display: inline-block;
     background-color: #0A2463;
     color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 14px 22px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.2rem;
     transition: 0.2s;
 }
 
