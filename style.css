@@ -112,7 +112,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 105px;
+    height: 85px;
     background-color: #FFFFFF;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -125,7 +125,7 @@ body {
 .bottom-btn {
     text-decoration: none;
     color: #2C3E50;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,8 +138,8 @@ body {
 }
 
 .bottom-icon {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     opacity: 0.85;
     margin-bottom: 3px;
 }
@@ -205,10 +205,10 @@ body {
 
     /* Alturas reales de tu header y footer */
     margin-top: 95px;      /* altura del top-nav */
-    margin-bottom: 105px;   /* altura del bottom-nav */
+    margin-bottom: 85px;   /* altura del bottom-nav */
 
     /* Altura exacta del espacio disponible */
-    height: calc(100vh - 95px - 105px);
+    height: calc(100vh - 95px - 85px);
 
     overflow: hidden;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.9rem;
+    font-size: 2.1rem;
     color: #0A2463;
     margin-bottom: 10px;
 }
@@ -314,9 +314,9 @@ body {
 .camara-main {
     position: relative;
     margin-top: 95px;      /* misma altura que tu .top-nav */
-    margin-bottom: 105px;   /* misma altura que tu .bottom-nav */
+    margin-bottom: 85px;   /* misma altura que tu .bottom-nav */
     width: 100vw;
-    height: calc(100vh - 95px - 105px); /* pantalla - header - footer */
+    height: calc(100vh - 95px - 85px); /* pantalla - header - footer */
     overflow: hidden;
 }
 
@@ -335,6 +335,6 @@ body.camara-page {
 
 body.camara-page .camara-main {
     margin-top: 95px;
-    margin-bottom: 105px;
-    height: calc(100vh - 95px - 105px);
+    margin-bottom: 85px;
+    height: calc(100vh - 95px - 85px);
 }
